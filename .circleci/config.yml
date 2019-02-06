@@ -24,6 +24,18 @@ jobs:
           paths:
             - node_modules
 
+# unit_test:
+#     working_directory: ~/georgeperry
+#     docker:
+#       - image: circleci/node:8.11.2
+#     steps:
+#       - checkout
+#       - attach_workspace:
+#           at: ~/georgeperry
+#       - run:
+#           name: Running Unit Tests
+#           command: yarn test
+
 generate_app:
     working_directory: ~/georgeperry
     docker:
@@ -63,9 +75,16 @@ workflows:
             branches:
               only:
                 - master
+      # - unit_test:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
       - generate_app:
           requires:
-            - unit_test
+            - build
           filters:
             branches:
               only:
