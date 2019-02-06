@@ -38,19 +38,19 @@ jobs:
           root: .
           paths:
             - build/*
-    deploy:
-      working_directory: ~/georgeperry
-      docker:
-        - image: circleci/python:3.6.6-stretch
-      steps:
-        - attach_workspace:
-            at: ~/georgeperry
-        - run:
-            name: Installing AWS CLI tools
-            command: sudo pip install awscli==1.14.35
-        - run:
-            name: Deploying build folder to S3
-            command: aws s3 sync build s3://www.georgeperry.info --region=eu-west-1 --delete --acl public-read;
+  deploy:
+    working_directory: ~/georgeperry
+    docker:
+      - image: circleci/python:3.6.6-stretch
+    steps:
+      - attach_workspace:
+          at: ~/georgeperry
+      - run:
+          name: Installing AWS CLI tools
+          command: sudo pip install awscli==1.14.35
+      - run:
+          name: Deploying build folder to S3
+          command: aws s3 sync build s3://www.georgeperry.info --region=eu-west-1 --delete --acl public-read;
       
 workflows:
   version: 2
