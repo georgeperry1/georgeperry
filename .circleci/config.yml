@@ -1,10 +1,98 @@
-version: 2
+version: 2.0
 
-dependencies:
-    override:
-        - sudo pip install awscli
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync build s3://www.georgeperry.info --region=eu-west-1 --delete --acl public-read;
+jobs:
+  build:
+    working_directory: ~/georgeperry
+    docker:
+      - image: circleci/node:8.11.2
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+
+unit_test:
+    working_directory: ~/georgeperry
+    docker:
+      - image: circleci/node:8.11.2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/georgeperry
+      - run:
+          name: Running Unit Tests
+          command: yarn test
+
+generate_app:
+    working_directory: ~/georgeperry
+    docker:
+      - image: circleci/node:8.11.2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/georgeperry
+      - run:
+          name: Generating application bundle
+          command: yarn build:production
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build/*
+            
+deploy:
+  working_directory: ~/georgeperry
+  docker:
+    - image: circleci/python:3.6.6-stretch
+  steps:
+    - attach_workspace:
+        at: ~/georgeperry
+    - run:
+        name: Installing AWS CLI tools
+        command: sudo pip install awscli==1.14.35
+    - run:
+        name: Deploying build folder to S3
+        command: aws s3 sync build s3://www.georgeperry.info --region=eu-west-1 --delete --acl public-read;
+  
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+      - unit_test:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+      - generate_app:
+          requires:
+            - unit_test
+          filters:
+            branches:
+              only:
+                - master
+      - deploy:
+          requires:
+            - generate_app
+          filters:
+            branches:
+              only:
+                - master
