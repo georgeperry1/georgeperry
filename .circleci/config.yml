@@ -33,7 +33,7 @@ jobs:
           at: ~/georgeperry
       - run:
           name: Generating application bundle
-          command: yarn build:production
+          command: yarn build
       - persist_to_workspace:
           root: .
           paths:
