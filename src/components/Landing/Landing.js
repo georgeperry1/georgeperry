@@ -17,7 +17,7 @@ class Landing extends Component {
     <StyledLanding>
       <LandingTextContainer>
         <LandingText>Hey, I'm George Perry,</LandingText>
-        <LandingText startDelay={2000}>I'm Fullstack Software Developer and I build stuff with</LandingText>
+        <LandingText startDelay={2000}>I'm a Fullstack Software Developer and I build stuff with</LandingText>
         <LandingSpecialities />
       </LandingTextContainer>
     </StyledLanding>

@@ -5,5 +5,5 @@ export const AppBody = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: auto;
 `;

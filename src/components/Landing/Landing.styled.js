@@ -14,7 +14,7 @@ export const LandingTextContainer = styled.div`
     flex-direction: column;
     min-height: 410px;
     height: auto;
-    width: 45%;
+    width: 55%;
     flex-wrap: wrap;
     overflow-wrap: wrap;
 `;

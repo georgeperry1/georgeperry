@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import { 
   StyledNavBar,
-  Logo,
+  Menu,
   SendMessageButton,
 } from './NavBar.styled';
 
@@ -17,8 +17,8 @@ class NavBar extends Component {
   render() {
     return (
       <StyledNavBar>
-        <Logo src={''}/>
-        <SendMessageButton>Send me and message</SendMessageButton>
+        <Menu/>
+        <SendMessageButton>Say Hello</SendMessageButton>
       </StyledNavBar>
     );
   }
