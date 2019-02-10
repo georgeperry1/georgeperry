@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import { AppBody } from './App.styled';
+import NavBar from './components/NavBar';
+import Landing from './components/Landing';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            George Perry's Website
-          </p>
-        </header>
-      </div>
+      <AppBody>
+        <NavBar/>
+        <Landing/>
+      </AppBody>
     );
   }
 }
