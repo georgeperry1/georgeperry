@@ -5,19 +5,31 @@ import PropTypes from 'prop-types';
 
 import { 
   StyledNavBar,
-  Menu,
   SendMessageButton,
 } from './NavBar.styled';
+import Menu from '../Menu';
 
 class NavBar extends Component {
   static defaultProps = {};
 
   static propTypes = {};
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+    };
+  }
+
+  handleOpen = e => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
+
   render() {
+    const { isOpen } = this.state;
     return (
       <StyledNavBar>
-        <Menu/>
+        <Menu isOpen={isOpen} onClick={this.handleOpen}/>
         <SendMessageButton>Say Hello</SendMessageButton>
       </StyledNavBar>
     );

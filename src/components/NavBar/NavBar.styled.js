@@ -2,23 +2,16 @@ import styled from 'styled-components';
 
 export const StyledNavBar = styled.div`
     height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 45px;
+    padding: 35px 45px 10px 45px;
 `;
-
-export const Menu = styled.div`
-
-`;
-
 
 export const SendMessageButton = styled.button`
     border: none;
     color: #333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'PT Serif', serif;
     cursor: pointer;
     float: right;
+    outline: none;
 `;
