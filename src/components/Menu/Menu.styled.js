@@ -13,8 +13,10 @@ export const MenuItem = styled.a`
     text-decoration: none;
     margin: 0px 0px 30px 0px;
     outline: none;
+    transition: all 280ms ease-in-out;
 
     &:hover {
-        color: #ddd;
+        color: #ccc;
+        transition: all 280ms ease-in-out;
     }
 `;

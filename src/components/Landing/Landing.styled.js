@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledLanding = styled.div`
     width: 100%;
-    height: 70vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;

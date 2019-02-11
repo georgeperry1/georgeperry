@@ -15,22 +15,25 @@ const styles = {
     top: '36px'
   },
   bmBurgerBars: {
-    background: '#373a47'
+    background: '#373a47',
+    transition: 'all 280ms ease-in-out',
   },
   bmBurgerBarsHover: {
-    background: '#a90000'
+    background: '#a90000',
+    transition: 'all 280ms ease-in-out',
   },
   bmCrossButton: {
     height: '24px',
-    width: '24px'
+    width: '24px',
+    outline: 'none',
   },
   bmCross: {
-    background: '#bdc3c7'
+    background: '#bdc3c7',
+    outline: 'none',
   },
   bmMenuWrap: {
     position: 'fixed',
     overflow: 'hidden',
-    // height: '100%'
   },
   bmMenu: {
     background: '#373a47',
@@ -49,7 +52,7 @@ const styles = {
     overflow: 'hidden',
   },
   bmItem: {
-    display: 'inline-block'
+    display: 'inline-block',
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'

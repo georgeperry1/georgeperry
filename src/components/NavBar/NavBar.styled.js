@@ -14,4 +14,19 @@ export const SendMessageButton = styled.button`
     cursor: pointer;
     float: right;
     outline: none;
+    letter-spacing: 0;
+    transition: all 280ms ease-in-out;
+
+
+    &:hover {
+        color: #777;
+        letter-spacing: 3px;
+        transition: all 280ms ease-in-out;
+    }
+
+    &:active {
+        color: #777;
+        letter-spacing: 3px;
+    }
+
 `;
