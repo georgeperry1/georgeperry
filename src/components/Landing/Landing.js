@@ -12,6 +12,10 @@ class Landing extends Component {
 
   static propTypes = {};
 
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
     return (
     <StyledLanding>
