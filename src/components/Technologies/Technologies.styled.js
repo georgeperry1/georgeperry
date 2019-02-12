@@ -24,4 +24,12 @@ export const TechnologyItem = styled.img`
     width: 80px;
     background: transparent;
     color: #fff;
+    position: relative;
+    top: 300px;
+`;
+
+export const TechnologyGifItem = styled(GifPlayer)`
+    position: relative;
+    top: 300px;
+    width: 120px;
 `;
