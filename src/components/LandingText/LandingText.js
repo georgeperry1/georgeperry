@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Typing from 'react-typing-animation';
 
 import { StyledLandingText } from './LandingText.styled';

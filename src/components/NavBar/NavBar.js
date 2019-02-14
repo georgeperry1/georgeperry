@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import { 
   StyledNavBar,
@@ -29,7 +29,10 @@ class NavBar extends Component {
     const { isOpen } = this.state;
     return (
       <StyledNavBar>
-        <Menu isOpen={isOpen} onClick={this.handleOpen}/>
+        <Menu 
+          isOpen={isOpen}
+          onClick={this.handleOpen}
+        />
         <SendMessageButton>Say Hello</SendMessageButton>
       </StyledNavBar>
     );

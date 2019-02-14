@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import GifPlayer from 'react-gif-player';
 
 export const StyledTechnologies = styled.div`
     display: flex;
     flex-direction: column;
     background: #2C3243;
-    padding: 120px 150px 0px 150px;
+    padding: 120px 150px 120px 150px;
 `;
 
 export const TechnologyBar = styled.div`

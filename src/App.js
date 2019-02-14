@@ -7,24 +7,35 @@ import Landing from './components/Landing';
 import Technologies from './components/Technologies';
 
 class App extends Component {
-  state = {
-    entered: false,
+  constructor(props) {
+    super(props);
+    this.state ={
+      enterCount: 0,
+      entered: false,
+    };
   };
 
   handleWaypointEnter = () => {
-    this.setState({ entered: true });
+    this.setState({
+      enterCount: this.state.enterCount + 1,
+      entered: true,
+    });
   };
 
   render() {
-    const { entered } = this.state;
+    const { entered, enterCount } = this.state;    
+
     return (
       <AppBody>
-        <NavBar/>
+        <NavBar />
         <Landing/>
         <Waypoint
           onEnter={this.handleWaypointEnter}
         />
-        <Technologies entered={entered} />
+        <Technologies 
+          entered={entered} 
+          enterCount={enterCount} 
+        />
       </AppBody>
     );
   }

@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Typing, { Backspace, Reset, Delay } from 'react-typing-animation';
 
 import { Speciality } from './LandingSpecialities.styled';
@@ -32,7 +32,7 @@ class LandingSpecialities extends Component {
   render() {
     return (
        <Typing loop>
-       <Delay ms={6500}/>
+       <Delay ms={8500}/>
         <Speciality>
           {specialties[0]}
           <Backspace count={10} delay={1100} />

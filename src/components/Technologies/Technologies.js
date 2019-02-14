@@ -1,8 +1,7 @@
 
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import GifPlayer from 'react-gif-player';
+// import PropTypes from 'prop-types';
 import anime from 'animejs';
 
 import { 
@@ -20,8 +19,8 @@ class Technologies extends Component {
   componentDidMount() {
     const technologyTimeline = anime.timeline({
       easing: 'easeOutExpo',
-      duration: 500,
       autoplay: false,
+      loop: false,
     });
 
     technologyTimeline.add({
@@ -34,31 +33,27 @@ class Technologies extends Component {
       targets: '.technology-item-2',
       translateY: -300,
       delay: anime.stagger(100),
-    });
+    }, 500);
 
     technologyTimeline.add({
       targets: '.technology-item-3',
       translateY: -300,
       delay: anime.stagger(100),
-    });
+    }, 1000);
 
     technologyTimeline.add({
       targets: '.technology-item-4',
       translateY: -300,
       delay: anime.stagger(100),
-    });
+    }, 1500);
 
     document.querySelector('.technology-item-1').onclick = technologyTimeline.play;
-    // if (!!this.props.entered) {
-    //   technologyTimeline.play();
-    // };
+    
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!!nextProps.entered) {
-      const item = document.querySelector('.technology-item-1');
-      console.log('Item:', item.onclick);
-      
+    if (!!nextProps.entered && nextProps.enterCount === 1) {
+      const item = document.querySelector('.technology-item-1');      
       item.onclick();
     }
   }
@@ -67,7 +62,7 @@ class Technologies extends Component {
     return (
       <StyledTechnologies>
         <TechnologyBar>
-          <TechnologyItem className="technology-item-1" src="../../assets/react-logo-png-transparent.png"/>
+          <TechnologyItem className="technology-item-1" src="../../assets/react.svg"/>
           <TechnologyItem className="technology-item-1" src="../../assets/logo-javascript.svg"/>
           <TechnologyItem className="technology-item-1" src="../../assets/redux.svg"/>         
           <TechnologyItem className="technology-item-1" src="../../assets/html-5.svg"/>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { stack as MenuWrapper } from 'react-burger-menu';
 
 export const StyledMenu = styled.div`
     position: fixed;
@@ -19,4 +20,7 @@ export const MenuItem = styled.a`
         color: #ccc;
         transition: all 280ms ease-in-out;
     }
+`;
+
+export const StyledMenuWrapper = styled(MenuWrapper)`
 `;
