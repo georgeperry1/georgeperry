@@ -5,6 +5,7 @@ import { AppBody } from './App.styled';
 import NavBar from './components/NavBar';
 import Landing from './components/Landing';
 import Technologies from './components/Technologies';
+import Experience from './components/Experience';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class App extends Component {
     return (
       <AppBody>
         <NavBar />
-        <Landing/>
+        <Landing />
         <Waypoint
           onEnter={this.handleWaypointEnter}
         />
@@ -36,6 +37,7 @@ class App extends Component {
           entered={entered} 
           enterCount={enterCount} 
         />
+        <Experience />
       </AppBody>
     );
   }
