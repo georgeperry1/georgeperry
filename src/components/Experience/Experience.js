@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
+import anime from 'animejs';
 
 import { 
     StyledExperience,
@@ -25,22 +26,33 @@ class Experience extends Component {
     };
   }
 
+  componentDidMount() {
+    anime({
+      targets: '.company-logo',
+      rotateY: 360,
+      delay: 0,
+      easing: 'linear',
+      duration: 4000,
+      loop: true,
+    });
+  }
+
   render() {
     return (
       <StyledExperience>
         <ExperienceHeading>Experience & Projects</ExperienceHeading>
         <TimelineBox>
             <CompanyBox>
-                <CompanyLogo>
+                <CompanyLogo className="company-logo">
                     <img src="../../assets/TrackstackLogo.png" alt="Trackstack" />
                 </CompanyLogo>
-                <CompanyLogo>
+                <CompanyLogo className="company-logo">
                     <img src="../../assets/more2-logo.png" alt="More2" />
                 </CompanyLogo>
-                <CompanyLogo>
+                <CompanyLogo className="company-logo">
                     <img src="../../assets/dialectlogo.png" alt="Dialect.ai" />
                 </CompanyLogo>
-                <CompanyLogo>
+                <CompanyLogo className="company-logo">
                     <img src="../../assets/mv-logo.png" alt="Model Village" />
                 </CompanyLogo>
             </CompanyBox>
