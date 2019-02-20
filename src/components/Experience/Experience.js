@@ -8,8 +8,10 @@ import {
     TimelineBox,
     CompanyBox,
     CompanyLogo,
+    CompanyName,
     Timeline,
     DateBox,
+    DateContainer,
     DateItem,
     Offshoot,
     OffshootBox,
@@ -56,12 +58,6 @@ class Experience extends Component {
                     <img src="../../assets/mv-logo.png" alt="Model Village" />
                 </CompanyLogo>
             </CompanyBox>
-            <DateBox>
-                <DateItem>2015</DateItem>
-                <DateItem>2016</DateItem>
-                <DateItem>2017</DateItem>
-                <DateItem>2018</DateItem>
-            </DateBox>
             <OffshootBox>
                 <Offshoot />
                 <Offshoot />
@@ -70,6 +66,24 @@ class Experience extends Component {
             </OffshootBox>
             <Timeline />
         </TimelineBox>
+        <DateBox>
+          <DateContainer>
+            <CompanyName>Trackstack</CompanyName>
+            <DateItem>2015 - 2016</DateItem>
+          </DateContainer>
+          <DateContainer>
+            <CompanyName>More2</CompanyName>
+            <DateItem>2016 - 2017</DateItem>
+          </DateContainer>
+          <DateContainer>
+            <CompanyName>Dialect.ai</CompanyName>
+            <DateItem>2016 - 2017</DateItem>
+          </DateContainer>
+          <DateContainer>
+            <CompanyName>Model Village</CompanyName>
+            <DateItem>2018 - Present</DateItem>
+          </DateContainer>  
+        </DateBox>
       </StyledExperience>
     );
   }

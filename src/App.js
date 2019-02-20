@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Landing from './components/Landing';
 import Technologies from './components/Technologies';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,7 @@ class App extends Component {
           enterCount={enterCount} 
         />
         <Experience />
+        <Projects />
       </AppBody>
     );
   }

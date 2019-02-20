@@ -28,6 +28,7 @@ export const CompanyBox = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 15px;
 `;
 
 export const CompanyLogo = styled.div`
@@ -49,8 +50,25 @@ export const DateBox = styled.div`
     justify-content: space-around;
 `;
 
-export const DateItem = styled.h3`
+export const DateContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    margin-top: 15px;
+`;
+
+export const DateItem = styled.div`
     color: #2C3243;
+    font-size: 18px;
+`;
+
+export const CompanyName = styled.div`
+    color: #2C3243;
+    font-size: 18px;
+    font-weight: bold;
 `;
 
 export const Timeline = styled.div`

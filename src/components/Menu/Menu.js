@@ -17,17 +17,19 @@ class Menu extends Component {
     window.addEventListener('scroll', this.listenScrollEvent);
   }
 
-  listenScrollEvent = e => {
-    if (window.scrollY > 400) {
-      const items = document.getElementsByClassName('bm-burger-bars');
-      items[0].style.background = '#fff';
-      items[1].style.background = '#fff';
-      items[2].style.background = '#fff';
-    } else {
-      const items = document.getElementsByClassName('bm-burger-bars');
-      items[0].style.background = '#373a47';
-      items[1].style.background = '#373a47';
-      items[2].style.background = '#373a47';
+  listenScrollEvent = e => {    
+    if (window.scrollY < 500) {
+      const elements = document.getElementsByClassName('bm-burger-bars');
+      const items = [...elements];
+      items.map(item => item.style.background = '#373a47');
+    } else if (window.scrollY > 501 && window.scrollY < 1500) {
+      const elements = document.getElementsByClassName('bm-burger-bars');
+      const items = [...elements];
+      items.map(item => item.style.background = '#fff');
+    } else if (window.scrollY > 1501) {
+      const elements = document.getElementsByClassName('bm-burger-bars');
+      const items = [...elements];
+      items.map(item => item.style.background = '#373a47');
     }
   }
   
@@ -43,11 +45,11 @@ class Menu extends Component {
       },
       bmBurgerBars: {
         background: '#373a47',
-        transition: 'all 280ms ease-in-out',
+        // transition: 'all 280ms ease-in-out',
       },
       bmBurgerBarsHover: {
         background: '#a90000',
-        transition: 'all 280ms ease-in-out',
+        // transition: 'all 280ms ease-in-out',
       },
       bmCrossButton: {
         height: '24px',
