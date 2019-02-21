@@ -5,6 +5,12 @@ import anime from 'animejs';
 import { 
     StyledProjects,
     ProjectBox,
+    Screenshot,
+    ScreenBackground,
+    MacBook,
+    DescriptionBox,
+    DescriptionHeading,
+    DescriptionText,
 } from './Projects.styled';
 
 class Projects extends Component {
@@ -26,9 +32,15 @@ class Projects extends Component {
     render() {
       return (
         <StyledProjects>
-            <ProjectBox>Orbit</ProjectBox>
-            <ProjectBox>Trackstack</ProjectBox>
-            <ProjectBox>Dialect.ai</ProjectBox>
+            <ProjectBox>
+              <Screenshot src="../../assets/snapshot.png" alt="orbit" />
+              <MacBook src="../../assets/mockup.png" alt="Macbook" />
+              <ScreenBackground />
+              <DescriptionBox>
+                <DescriptionHeading>Orbit</DescriptionHeading>
+                <DescriptionText>Orbit is a data analytics projects</DescriptionText>
+              </DescriptionBox>
+            </ProjectBox>
         </StyledProjects>
       );
     }
