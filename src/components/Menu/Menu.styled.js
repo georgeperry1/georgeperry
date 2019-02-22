@@ -15,11 +15,11 @@ export const MenuItem = styled.a`
     text-decoration: none;
     margin: 0px 0px 30px 0px;
     outline: none;
-    transition: all 280ms ease-in-out;
+    transition: all 480ms ease-in-out;
 
     &:hover {
-        color: #ccc;
-        transition: all 280ms ease-in-out;
+        color: #FBB018;
+        transition: all 480ms ease-in-out;
     }
 `;
 

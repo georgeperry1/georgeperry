@@ -18,7 +18,7 @@ const buzz = keyframes`
 
 export const SendMessageButton = styled.button`
     border: none;
-    color: #333;
+    color: #2C3243;
     font-weight: bold;
     font-size: 22px;
     font-family: 'PT Serif', serif;
@@ -33,7 +33,7 @@ export const SendMessageButton = styled.button`
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
     &:hover {
-        color: #777;
+        color: #FBB018;
         -webkit-animation-name: ${buzz};
         animation-name: ${buzz};
         -webkit-animation-duration: 0.15s;

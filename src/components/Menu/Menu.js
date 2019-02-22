@@ -21,15 +21,15 @@ class Menu extends Component {
     if (window.scrollY < 500) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
-      items.map(item => item.style.background = '#373a47');
+      items.map(item => item.style.background = '#FBB018');
     } else if (window.scrollY > 501 && window.scrollY < 1500) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
-      items.map(item => item.style.background = '#fff');
+      items.map(item => item.style.background = '#FBB018');
     } else if (window.scrollY > 1501) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
-      items.map(item => item.style.background = '#373a47');
+      items.map(item => item.style.background = '#FBB018');
     }
   }
   
@@ -44,7 +44,7 @@ class Menu extends Component {
         top: '36px'
       },
       bmBurgerBars: {
-        background: '#373a47',
+        background: '#FBB018',
         // transition: 'all 280ms ease-in-out',
       },
       bmBurgerBarsHover: {
