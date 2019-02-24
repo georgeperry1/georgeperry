@@ -18,15 +18,15 @@ class Menu extends Component {
   }
 
   listenScrollEvent = e => {    
-    if (window.scrollY < 500) {
+    if (window.scrollY < 2350) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
       items.map(item => item.style.background = '#FBB018');
-    } else if (window.scrollY > 501 && window.scrollY < 1500) {
+    } else if (window.scrollY > 2351 && window.scrollY < 2900) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
-      items.map(item => item.style.background = '#FBB018');
-    } else if (window.scrollY > 1501) {
+      items.map(item => item.style.background = '#2C3243');
+    } else if (window.scrollY > 2901) {
       const elements = document.getElementsByClassName('bm-burger-bars');
       const items = [...elements];
       items.map(item => item.style.background = '#FBB018');
@@ -94,10 +94,12 @@ class Menu extends Component {
     return (
       <StyledMenu>
         <StyledMenuWrapper isOpen={isOpen} styles={this.handleMenuStyle()}>
-          <MenuItem href="#">Overview</MenuItem>
-          <MenuItem href="#">Technologies</MenuItem>
-          <MenuItem href="#">Experience & Projects</MenuItem>
-          <MenuItem href="#">Say Hello</MenuItem>
+          <MenuItem href="#overview" offset='600'>Overview</MenuItem>
+          <MenuItem href="#technologies" offset='100'>Technologies</MenuItem>
+          <MenuItem href="#experience" offset='100'>Experience & Projects</MenuItem>
+          <MenuItem href="#writing" offset='100'>Writing</MenuItem>
+          <MenuItem href="#findme" offset='100'>Find Me</MenuItem>
+          <MenuItem href="#hello" offset='100'>Say Hello</MenuItem>
         </StyledMenuWrapper>
       </StyledMenu>
     );

@@ -120,6 +120,7 @@ class Technologies extends Component {
   render() {
     return (
       <StyledTechnologies>
+        <section id='technologies'></section>
         <TechnologiesHeading>Technologies</TechnologiesHeading>
         <TechnologyBar>
           <TechnologyItemContainer className="technology-container-1">

@@ -5,7 +5,7 @@ export const StyledNavBar = styled.div`
     padding: 35px 45px 10px 45px;
 `;
 
-const buzz = keyframes`
+export const buzz = keyframes`
     50% {
       -webkit-transform: translateX(3px) rotate(2deg);
       transform: translateX(3px) rotate(2deg);

@@ -42,6 +42,7 @@ class Experience extends Component {
   render() {
     return (
       <StyledExperience>
+        <section id='experience'></section>
         <ExperienceHeading>Experience & Projects</ExperienceHeading>
         <TimelineBox>
             <CompanyBox>

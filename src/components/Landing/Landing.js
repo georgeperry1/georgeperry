@@ -19,6 +19,7 @@ class Landing extends Component {
   render() {
     return (
     <StyledLanding>
+      <section id='overview'></section>
       <LandingTextContainer>
         <LandingText>Hey, I'm George Perry,</LandingText>
         <LandingText startDelay={3000}>I'm a Fullstack Software Developer and I build stuff with</LandingText>

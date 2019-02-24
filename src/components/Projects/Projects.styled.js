@@ -7,14 +7,13 @@ export const StyledProjects = styled.div`
     padding: 200px 0px 120px 0px;
 `;
 
-export const ProjectBox = styled.div`
+export const YellowProjectBox = styled.div`
     display: flex;
     background: #FBB018;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 450px;
-    box-sizing: border-box;
     position: relative;
     padding: 20px;
 
@@ -49,80 +48,40 @@ export const ProjectBox = styled.div`
     }
 `;
 
-export const MacBook = styled.img`
-    position: relative;
-    width: 500px;
-    z-index: 10;
-    left: 60px;
-    top: 270px;
-`;
-
-export const ScreenBackground = styled.div`
-    width: 337px;
-    min-height: 222px;
-    position: relative;
-    z-index: 11;
-    background: #000;
-    top: -50px;
-    left: 139px;
-`;
-
-export const Screenshot = styled.img`
-    width: 337px;
-    position: relative;
-    z-index: 12;
-    top: 530px;
-    left: 139px;
-`;
-
-export const ProjectLogo = styled.img`
-    z-index: 15;
-    position: relative;
-    top: 250px;
-    left: 1200px;
-    border-radius: 50%;
-    width: 120px;
-`;
-
-export const LogoBox = styled.div`
-    width: 80px;
-    min-height: 500px;
+export const WhiteProjectBox = styled.div`
     display: flex;
-    flex-direction: column;
+    background: #fff;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    padding: 0px 20px 100px 60px;
+    margin-top: 100px;
+`;
+
+export const ProjectContents = styled.div`
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+`;
+
+export const MobileContainer = styled.div`
     position: relative;
-    top: -400px;
-    left: 650px;
-    z-index: 15;
+    right: 50px;
 `;
 
-export const TechLogos = styled.img`
-    width: 60px;
+export const DialectMobileOne = styled.img`
+    width: 200px;
 `;
 
-export const DescriptionBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 500px;
-    position: relative;
-    top: -850px;
-    left: 860px;
-    z-index: 15;
-    line-height: 2;
+export const DialectMobileTwo = styled.img`
+    width: 180px;
 `;
 
-export const DescriptionHeading = styled.p`
-    font-size: 40px;
-    color: #2C3243;
-    font-weight: bold;
-    letter-spacing: 4px;
-`;
-
-export const DescriptionText = styled.p`
-    font-size: 18px;
-    color: #2C3243;
-    letter-spacing: 2px;
-    position: relative;
-    top: -40px;
+export const TracstackMobile = styled.img`
+    z-index: 16;
+    width: 520px;
+    margin-left: 20px;
 `;
