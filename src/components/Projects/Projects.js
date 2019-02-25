@@ -48,7 +48,7 @@ const trackstackLogos = [
   '../../assets/mysql.svg',
 ];
 const trackstackProjectName = 'Trackstack';
-const trackstackProjectDescription = "Trackstack makes music discovery for DJs simpler and more productive. A mobile crate-digging app that helps DJs discover new and unheard tracks, organise their playlists, and share music with their colleagues, fans and friends.";
+const trackstackProjectDescription = "Trackstack makes music discovery for DJs simpler and more productive. I was part of the team that built the mobile crate-digging app that helps DJs discover new and unheard tracks, organise their playlists, and share music with their colleagues, fans and friends.";
 
   class Projects extends Component {
     static defaultProps = {};
