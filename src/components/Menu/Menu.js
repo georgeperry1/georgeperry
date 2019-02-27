@@ -13,23 +13,32 @@ class Menu extends Component {
     isOpen: PropTypes.bool,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: '#FBB018',
+    };
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent);
   }
 
-  listenScrollEvent = e => {    
+  listenScrollEvent = () => {    
     if (window.scrollY < 2350) {
-      const elements = document.getElementsByClassName('bm-burger-bars');
-      const items = [...elements];
-      items.map(item => item.style.background = '#FBB018');
-    } else if (window.scrollY > 2351 && window.scrollY < 2900) {
-      const elements = document.getElementsByClassName('bm-burger-bars');
-      const items = [...elements];
-      items.map(item => item.style.background = '#2C3243');
-    } else if (window.scrollY > 2901) {
-      const elements = document.getElementsByClassName('bm-burger-bars');
-      const items = [...elements];
-      items.map(item => item.style.background = '#FBB018');
+      this.setState({ color: '#FBB018' });
+    } 
+    
+    if (window.scrollY > 2351 && window.scrollY < 2900) {
+      this.setState({ color: '#2C3243' });
+    } 
+    
+    if (window.scrollY > 2901 && window.screenY < 3450) {
+      this.setState({ color: '#FBB018' });
+    }
+
+    if (window.scrollY > 3451) {
+      this.setState({ color: '#2C3243' });
     }
   }
   
@@ -44,12 +53,10 @@ class Menu extends Component {
         top: '36px'
       },
       bmBurgerBars: {
-        background: '#FBB018',
-        // transition: 'all 280ms ease-in-out',
+        background: `${this.state.color}`,
       },
       bmBurgerBarsHover: {
         background: '#a90000',
-        // transition: 'all 280ms ease-in-out',
       },
       bmCrossButton: {
         height: '24px',
@@ -97,7 +104,7 @@ class Menu extends Component {
           <MenuItem href="#overview" offset='600'>Overview</MenuItem>
           <MenuItem href="#technologies" offset='100'>Technologies</MenuItem>
           <MenuItem href="#experience" offset='100'>Experience & Projects</MenuItem>
-          <MenuItem href="#writing" offset='100'>Writing</MenuItem>
+          <MenuItem href="#writing" offset='50'>Writing</MenuItem>
           <MenuItem href="#findme" offset='100'>Find Me</MenuItem>
           <MenuItem href="#hello" offset='100'>Say Hello</MenuItem>
         </StyledMenuWrapper>

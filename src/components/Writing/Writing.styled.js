@@ -1,12 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { buzz } from '../NavBar/NavBar.styled';
 
 export const StyledWriting = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     background: #fff;
-    /* padding: 200px 0px 120px 0px; */
+    padding: 20px 10px 100px 10px;
 `;
 
 export const WritingHeading = styled.p`
@@ -26,27 +28,83 @@ export const Article = styled.div`
     background: #fff;
     justify-content: space-around;
     align-items: center;
+    width: auto;
+    align-self: center;
+    margin: 25px 0px;
+`;
+
+export const ThumbnailContainer = styled.div`
+    width: 250px;
+    height: 160px;
+`;
+
+export const StatBox = styled.div`
+    width: 90px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+`;
+
+export const Stat = styled.p`
+    font-size: 20px;
+    color: #2C3243;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+`;
+
+export const StatLabel = styled.p`
+    font-size: 16px;
+    color: #2C3243;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+`;
+
+export const ThumbnailStatBox = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -164px;
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+
+    &:hover {
+        transition: all 400ms ease-in-out;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.7);
+    }
 `;
 
 export const Thumbnail = styled.img`
     width: 250px;
+    height: 100%;
 `;
 
 export const ArticleDetails = styled.div`
     display: flex;
     flex-direction: column;
+    width: 500px;
+    padding-left: 30px; 
 `;
 
 export const ArticleTitle = styled.p`
     color: #2C3243;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 2px;
 `;
 
 export const ReadMe = styled.a`
     color: #2C3243;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
+    width: 70px;
 
     &:hover {
         color: #FBB018;

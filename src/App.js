@@ -8,6 +8,7 @@ import Technologies from './components/Technologies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Writing from './components/Writing';
+import FindMe from  './components/FindMe';
 
 class App extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class App extends Component {
         <Experience />
         <Projects />
         <Writing />
+        <FindMe />
       </AppBody>
     );
   }
