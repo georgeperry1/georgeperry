@@ -17,6 +17,13 @@ export const TechnologiesHeading = styled.h1`
     top: -50px;
 `;
 
+export const TechnologyContainer = styled.div`
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px
+`;
+
 export const TechnologyBar = styled.div`
     display: flex;
     flex-direction: row;

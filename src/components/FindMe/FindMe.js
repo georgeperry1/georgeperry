@@ -39,7 +39,11 @@ class FindMe extends Component {
                         <MediumIcon size={60} />
                     </a>
                 </IconRow>
-                <EmailMe href="mailto:hello@georgeperry.info">hello@georgeperry.info</EmailMe>
+                <EmailMe 
+                    href="mailto:hello@georgeperry.info?subject=Hey%20George!&body=Hey%20George%2C%0A%0AI%20wanted%20to%20get%20in%20touch%20because..."
+                >
+                    hello@georgeperry.info
+                </EmailMe>
             </StyledFindMe>
         );
     }
