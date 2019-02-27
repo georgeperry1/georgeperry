@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const StyledNavBar = styled.div`
     height: 80px;
@@ -16,7 +17,7 @@ export const buzz = keyframes`
     }
 `;
 
-export const SendMessageButton = styled.button`
+export const SendMessageButton = styled(AnchorLink)`
     border: none;
     color: #2C3243;
     font-weight: bold;
@@ -31,6 +32,7 @@ export const SendMessageButton = styled.button`
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    text-decoration: none;
 
     &:hover {
         color: #FBB018;
@@ -42,5 +44,6 @@ export const SendMessageButton = styled.button`
         animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
+        text-decoration: none;
     }
 `;

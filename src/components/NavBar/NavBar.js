@@ -31,7 +31,7 @@ class NavBar extends Component {
           isOpen={isOpen}
           onClick={this.handleOpen}
         />
-        <SendMessageButton>Say Hello</SendMessageButton>
+        <SendMessageButton href="#findme" offset='0'>Say Hello</SendMessageButton>
       </StyledNavBar>
     );
   }

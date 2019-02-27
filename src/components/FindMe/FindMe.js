@@ -10,13 +10,15 @@ import {
     LinkedInIcon,
     NpmIcon,
     MediumIcon,
+    EmailMe,
 } from './FindMe.styled';
 
 class FindMe extends Component {
     render() {
         return(
             <StyledFindMe>
-                <FindMeHeader>Find Me</FindMeHeader>
+                <section id="findme"></section>
+                <FindMeHeader>Say Hello</FindMeHeader>
                 <IconRow>
                     <a href="https://github.com/georgeperry1" target="_blank" rel="noopener noreferrer">
                         <GitHubIcon size={60} />
@@ -37,6 +39,7 @@ class FindMe extends Component {
                         <MediumIcon size={60} />
                     </a>
                 </IconRow>
+                <EmailMe href="mailto:hello@georgeperry.info">hello@georgeperry.info</EmailMe>
             </StyledFindMe>
         );
     }

@@ -105,8 +105,7 @@ class Menu extends Component {
           <MenuItem href="#technologies" offset='100'>Technologies</MenuItem>
           <MenuItem href="#experience" offset='100'>Experience & Projects</MenuItem>
           <MenuItem href="#writing" offset='50'>Writing</MenuItem>
-          <MenuItem href="#findme" offset='100'>Find Me</MenuItem>
-          <MenuItem href="#hello" offset='100'>Say Hello</MenuItem>
+          <MenuItem href="#findme" offset='0'>Say Hello</MenuItem>
         </StyledMenuWrapper>
       </StyledMenu>
     );

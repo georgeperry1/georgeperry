@@ -15,7 +15,7 @@ export const StyledFindMe = styled.div`
     flex-direction: column;
     justify-content: center;
     background: #2C3243;
-    padding: 30px 0px;
+    padding: 30px 0px 80px 0px;
 `;
 
 export const FindMeHeader = styled.p`
@@ -124,6 +124,20 @@ export const MediumIcon = styled(Medium)`
     color: #fff;
     cursor: pointer;
 
+    &:hover {
+        color: #FBB018;
+    }
+`;
+
+export const EmailMe = styled.a`
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+    
     &:hover {
         color: #FBB018;
     }
