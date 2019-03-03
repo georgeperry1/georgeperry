@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+import { BREAK_POINTS } from '../../config';
+
 export const StyledProjects = styled.div`
     display: flex;
     flex-direction: column;
     background: #fff;
     padding: 200px 0px 120px 0px;
+    margin: 0;
 `;
 
 export const YellowProjectBox = styled.div`
@@ -16,6 +19,12 @@ export const YellowProjectBox = styled.div`
     height: 450px;
     position: relative;
     padding: 20px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        padding: 0px;
+        height: 850px;
+        flex-direction: column;
+    }
 
     &::before {
         content: '';
@@ -57,6 +66,12 @@ export const WhiteProjectBox = styled.div`
     height: 600px;
     padding: 0px 20px 100px 60px;
     margin-top: 100px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        padding: 0px;
+        height: 1050px;
+        flex-direction: column;
+    }
 `;
 
 export const ProjectContents = styled.div`
@@ -65,11 +80,33 @@ export const ProjectContents = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        flex-direction: column-reverse;
+    }
+`;
+
+export const ReverseProjectContents = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        flex-direction: column;
+    }
 `;
 
 export const MobileContainer = styled.div`
     position: relative;
     right: 50px;
+    margin-left: 100px;
+    min-width: 380px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        margin-bottom: 160px;
+    }
 `;
 
 export const DialectMobileOne = styled.img`

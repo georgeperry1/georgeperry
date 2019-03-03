@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
+import { BREAK_POINTS } from '../../config';
+
 export const StyledExperience = styled.div`
    display: flex;
     flex-direction: column;
     background: #fff;
     padding: 100px 150px 120px 150px;
+    margin: 0;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        padding: 60px 100px 60px 100px;
+    }
 `;
 
 export const ExperienceHeading = styled.h1`

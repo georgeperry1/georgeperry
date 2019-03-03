@@ -4,6 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 export const StyledNavBar = styled.div`
     height: 80px;
     padding: 35px 45px 10px 45px;
+    margin: 0;
 `;
 
 export const buzz = keyframes`

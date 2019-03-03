@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import { BREAK_POINTS } from '../../config';
+
+
 export const StyledDescriptionBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -7,6 +10,12 @@ export const StyledDescriptionBox = styled.div`
     width: 500px;
     z-index: 15;
     line-height: 2;
+    margin: 0;
+    padding: 0px 20px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        width: 600px;
+    }
 `;
 
 export const DescriptionHeading = styled.p`

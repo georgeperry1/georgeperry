@@ -16,7 +16,7 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: '#FBB018',
+      color: '#aaa',
     };
   }
 
@@ -26,19 +26,19 @@ class Menu extends Component {
 
   listenScrollEvent = () => {    
     if (window.scrollY < 2350) {
-      this.setState({ color: '#FBB018' });
+      this.setState({ color: '#aaa' });
     } 
     
     if (window.scrollY > 2351 && window.scrollY < 2900) {
-      this.setState({ color: '#2C3243' });
+      this.setState({ color: '#aaa' });
     } 
     
     if (window.scrollY > 2901 && window.screenY < 3450) {
-      this.setState({ color: '#FBB018' });
+      this.setState({ color: '#aaa' });
     }
 
     if (window.scrollY > 3451) {
-      this.setState({ color: '#2C3243' });
+      this.setState({ color: '#aaa' });
     }
   }
   

@@ -14,35 +14,55 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state ={
-      enterCount: 0,
-      entered: false,
+      enterTechCount: 0,
+      enteredTech: false,
+      enterWritingCount: 0,
+      enteredWriting: false,
     };
   };
 
-  handleWaypointEnter = () => {
+  handleTechnologyWaypointEnter = () => {
     this.setState({
-      enterCount: this.state.enterCount + 1,
-      entered: true,
+      enterTechCount: this.state.enterTechCount + 1,
+      enteredTech: true,
+    });
+  };
+
+  handleWritingWaypointEnter = () => {
+    this.setState({
+      enterWritingCount: this.state.enterWritingCount + 1,
+      enteredWriting: true,
     });
   };
 
   render() {
-    const { entered, enterCount } = this.state;    
+    const { 
+      enteredTech, 
+      enterTechCount,
+      enteredWriting,
+      enterWritingCount, 
+    } = this.state;    
 
     return (
       <AppBody>
         <NavBar />
         <Landing />
         <Waypoint
-          onEnter={this.handleWaypointEnter}
+          onEnter={this.handleTechnologyWaypointEnter}
         />
         <Technologies 
-          entered={entered} 
-          enterCount={enterCount} 
+          entered={enteredTech} 
+          enterCount={enterTechCount} 
         />
         <Experience />
         <Projects />
-        <Writing />
+        <Waypoint
+          onEnter={this.handleWritingWaypointEnter}
+        />
+        <Writing 
+          entered={enteredWriting}
+          enterCount={enterWritingCount}
+        />
         <FindMe />
       </AppBody>
     );

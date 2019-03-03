@@ -7,6 +7,7 @@ import {
     YellowProjectBox,
     WhiteProjectBox,
     ProjectContents,
+    ReverseProjectContents,
     MobileContainer,
     DialectMobileOne,
     DialectMobileTwo,
@@ -77,14 +78,14 @@ const trackstackProjectDescription = "Trackstack makes music discovery for DJs s
               </ProjectContents>
             </YellowProjectBox>
             <WhiteProjectBox>
-              <ProjectContents>
+              <ReverseProjectContents>
                 <DescriptionBox projectName={dialectProjectName} projectDescription={dialectProjectDescription} />
                 <LogoBox logos={dialectLogos} />
                 <MobileContainer>
                   <DialectMobileOne src="../../assets/dialect1.jpg" />
                   <DialectMobileTwo src="../../assets/dialect2.jpg" />
                 </MobileContainer>
-              </ProjectContents>
+              </ReverseProjectContents>
             </WhiteProjectBox>
             <YellowProjectBox>
               <ProjectContents>

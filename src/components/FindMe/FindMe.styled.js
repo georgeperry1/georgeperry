@@ -16,6 +16,7 @@ export const StyledFindMe = styled.div`
     justify-content: center;
     background: #2C3243;
     padding: 30px 0px 80px 0px;
+    margin: 0;
 `;
 
 export const FindMeHeader = styled.p`

@@ -9,6 +9,7 @@ export const StyledMenu = styled.div`
     left: 0px;
     top: 0px;
     z-index: 100;
+    margin: 0;
 `;
 
 export const MenuItem = styled(AnchorLink)`

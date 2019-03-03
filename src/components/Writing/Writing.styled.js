@@ -9,6 +9,7 @@ export const StyledWriting = styled.div`
     align-items: center; 
     background: #fff;
     padding: 20px 10px 100px 10px;
+    margin: 0;
 `;
 
 export const WritingHeading = styled.p`
@@ -36,6 +37,8 @@ export const Article = styled.div`
 export const ThumbnailContainer = styled.div`
     width: 250px;
     height: 160px;
+    position: relative;
+    left: -270px;
 `;
 
 export const StatBox = styled.div`
@@ -92,6 +95,8 @@ export const ArticleDetails = styled.div`
     flex-direction: column;
     width: 500px;
     padding-left: 30px; 
+    position: relative;
+    right: -270px;
 `;
 
 export const ArticleTitle = styled.p`
