@@ -13,6 +13,13 @@ class LandingText extends Component {
 
   render() {
     const { startDelay } = this.props;
+    if (window.screenX < 1200) {
+      return (
+        <StyledLandingText>
+          {this.props.children}
+        </StyledLandingText>
+      );
+    }
   	return (
       <Typing startDelay={startDelay}>
         <StyledLandingText>

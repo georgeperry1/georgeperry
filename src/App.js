@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
+import { hotjar } from 'react-hotjar';
 
 import { AppBody } from './App.styled';
 import Landing from './components/Landing';
@@ -9,16 +10,22 @@ import Projects from './components/Projects';
 import Writing from './components/Writing';
 import FindMe from  './components/FindMe';
 
+const hjid = 1218098;
+const hjsv = 6;
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       enterTechCount: 0,
       enteredTech: false,
       enterWritingCount: 0,
       enteredWriting: false,
     };
   };
+
+  // componentDidMount() {
+  //   hotjar.initialize(hjid, hjsv);
+  // };
 
   handleTechnologyWaypointEnter = () => {
     this.setState({

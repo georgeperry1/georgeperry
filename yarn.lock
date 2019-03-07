@@ -7169,6 +7169,10 @@ react-gif-player@^0.4.2:
   dependencies:
     prop-types "^15.6.0"
 
+react-hotjar@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-hotjar/-/react-hotjar-2.0.0.tgz#b97bb439d9b057eb07da46f234527128e13f593c"
+
 react-icons-kit@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-icons-kit/-/react-icons-kit-1.2.1.tgz#8c4ff22fbe70a6e014f1952eac0494bca4b006b5"

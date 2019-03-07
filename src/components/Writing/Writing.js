@@ -113,7 +113,7 @@ import {
     };
 
     componentWillReceiveProps(nextProps) {
-        if (!!nextProps.entered && nextProps.enterCount === 1 && window.scrollX > 1200) {
+        if (!!nextProps.entered && nextProps.enterCount === 1 && window.screenX > 1200) {
           const item = document.querySelector('.thumbnail-7');      
           item.onfullscreenchange();
         }

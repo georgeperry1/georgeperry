@@ -1,7 +1,6 @@
 
 
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import Typing, { Backspace, Reset, Delay } from 'react-typing-animation';
 
 import { Speciality } from './LandingSpecialities.styled';
@@ -25,14 +24,23 @@ const specialties = [
 ];
 
 class LandingSpecialities extends Component {
-  static defaultProps = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      delay: 8500,
+    };
+  }
 
-  static propTypes = {};
+  componentDidMount() {
+    if (window.screenX < 1200) {
+      this.setState({ delay: 0 });
+    }
+  }
 
   render() {
     return (
        <Typing loop>
-       <Delay ms={8500}/>
+       <Delay ms={this.state.delay}/>
         <Speciality>
           {specialties[0]}
           <Backspace count={10} delay={1100} />

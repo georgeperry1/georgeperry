@@ -18,25 +18,18 @@ import {
 } from './Experience.styled';
 
 class Experience extends Component {
-  static defaultProps = {};
-
-  static propTypes = {};
-
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
+  
   componentDidMount() {
-    anime({
-      targets: '.company-logo',
-      rotateY: 360,
-      delay: 0,
-      easing: 'linear',
-      duration: 4000,
-      loop: true,
-    });
+    if (window.screenX >= 1200) {
+      anime({
+        targets: '.company-logo',
+        rotateY: 360,
+        delay: 0,
+        easing: 'linear',
+        duration: 4000,
+        loop: true,
+      }); 
+    }
   }
 
   render() {
