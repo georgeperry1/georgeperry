@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import { BREAK_POINTS } from '../../config';
 
-
 export const StyledDescriptionBox = styled.div`
     display: flex;
     flex-direction: column;

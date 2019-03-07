@@ -12,6 +12,14 @@ export const StyledExperience = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         padding: 60px 100px 60px 100px;
     }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 60px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 60px 10px 60px 10px;
+    }
 `;
 
 export const ExperienceHeading = styled.h1`
@@ -48,6 +56,10 @@ export const CompanyLogo = styled.div`
         width: 100%;
         border-radius: 50px;
     }
+
+    ${BREAK_POINTS.MOBILE} {
+        width: 80px;
+    }
 `;
 
 export const DateBox = styled.div`
@@ -64,18 +76,28 @@ export const DateContainer = styled.div`
     align-items: center;
     width: 150px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: 20px;
 `;
 
 export const DateItem = styled.div`
     color: #2C3243;
     font-size: 18px;
+    text-align: center;
+
+    ${BREAK_POINTS.MOBILE} {
+        font-size: 16px;
+    }
 `;
 
 export const CompanyName = styled.div`
     color: #2C3243;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+
+    ${BREAK_POINTS.MOBILE} {
+        font-size: 16px;
+    }
 `;
 
 export const Timeline = styled.div`

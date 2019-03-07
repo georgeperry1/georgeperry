@@ -16,7 +16,7 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: '#aaa',
+      color: '#FBB018',
     };
   }
 
@@ -25,32 +25,17 @@ class Menu extends Component {
   }
 
   listenScrollEvent = () => {    
-    if (window.scrollY < 2350) {
-      this.setState({ color: '#aaa' });
-    } 
-    
-    if (window.scrollY > 2351 && window.scrollY < 2900) {
-      this.setState({ color: '#aaa' });
-    } 
-    
-    if (window.scrollY > 2901 && window.screenY < 3450) {
-      this.setState({ color: '#aaa' });
-    }
-
-    if (window.scrollY > 3451) {
-      this.setState({ color: '#aaa' });
-    }
+   
   }
   
-
   handleMenuStyle = () => {    
     return {
       bmBurgerButton: {
         position: 'fixed',
         width: '36px',
         height: '30px',
-        left: '50px',
-        top: '36px'
+        left: '40px',
+        top: '25px'
       },
       bmBurgerBars: {
         background: `${this.state.color}`,

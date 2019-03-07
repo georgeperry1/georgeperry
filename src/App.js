@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 
 import { AppBody } from './App.styled';
-import NavBar from './components/NavBar';
 import Landing from './components/Landing';
 import Technologies from './components/Technologies';
 import Experience from './components/Experience';
@@ -45,7 +44,7 @@ class App extends Component {
 
     return (
       <AppBody>
-        <NavBar />
+        {/* <NavBar /> */}
         <Landing />
         <Waypoint
           onEnter={this.handleTechnologyWaypointEnter}

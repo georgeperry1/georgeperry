@@ -9,8 +9,17 @@ export const StyledTechnologies = styled.div`
     padding: 100px 150px 120px 150px;
 
     ${BREAK_POINTS.DESKTOP_SMALL} {
-        padding: 60px 120px 60px 120px;
+        padding: 60px 100px 60px 100px;
     }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 60px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 40px 0px 140px 0px;
+    }
+    
 `;
 
 export const TechnologiesHeading = styled.h1`
@@ -21,6 +30,18 @@ export const TechnologiesHeading = styled.h1`
     text-align: center;
     position: relative;
     top: -50px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        top: -40px;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        top: -30px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        top: -20px;
+    }
 `;
 
 export const TechnologyContainer = styled.div`
@@ -32,6 +53,15 @@ export const TechnologyContainer = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         min-width: 600px;
     }
+
+    ${BREAK_POINTS.TABLET} {
+        min-width: 400px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        min-width: 200px;
+    }
+    
 `;
 
 export const TechnologyBar = styled.div`
@@ -47,7 +77,19 @@ export const TechnologyBar = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         min-width: 600px;
         flex-wrap: wrap;
-        height: 240px;
+        height: auto;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        min-width: 400px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        min-width: 200px;
+        flex-wrap: wrap;
+        height: auto;
     }
 `;
 

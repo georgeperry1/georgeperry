@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import { StyledLanding, LandingTextContainer } from './Landing.styled';
 import LandingText from '../LandingText';
 import LandingSpecialities from '../LandingSpecialities';
+import NavBar from '../NavBar';
 
 class Landing extends Component {
   static defaultProps = {};
@@ -19,6 +20,7 @@ class Landing extends Component {
   render() {
     return (
     <StyledLanding>
+      <NavBar />
       <section id='overview'></section>
       <LandingTextContainer>
         <LandingText>Hey, I'm George Perry,</LandingText>
