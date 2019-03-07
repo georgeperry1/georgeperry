@@ -8,6 +8,18 @@ export const StyledProjects = styled.div`
     background: #fff;
     padding: 200px 0px 120px 0px;
     margin: 0;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        padding: 120px 0px;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 100px 0px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 80px 0px;
+    }
 `;
 
 export const YellowProjectBox = styled.div`
@@ -23,6 +35,18 @@ export const YellowProjectBox = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         padding: 0px;
         height: 850px;
+        flex-direction: column;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 0px;
+        height: 950px;
+        flex-direction: column;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 0px;
+        height: 1050px;
         flex-direction: column;
     }
 
@@ -70,6 +94,18 @@ export const WhiteProjectBox = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         padding: 0px;
         height: 1050px;
+        flex-direction: column;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 0px;
+        height: 1150px;
+        flex-direction: column;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 0px;
+        height: 1250px;
         flex-direction: column;
     }
 `;
@@ -121,4 +157,12 @@ export const TracstackMobile = styled.img`
     z-index: 16;
     width: 520px;
     margin-left: 20px;
+
+    ${BREAK_POINTS.TABLET} {
+        width: 460px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        width: 350px;
+    }
 `;

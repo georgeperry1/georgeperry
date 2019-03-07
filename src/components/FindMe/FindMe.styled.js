@@ -7,6 +7,7 @@ import { stackoverflow } from 'react-icons-kit/icomoon/stackoverflow';
 import { linkedin2 } from 'react-icons-kit/icomoon/linkedin2';
 import { twitter } from 'react-icons-kit/icomoon/twitter';
 import { medium } from 'react-icons-kit/entypo/medium';
+import { BREAK_POINTS } from '../../config';
 
 export const StyledFindMe = styled.div`
     width: 100%;
@@ -38,6 +39,19 @@ export const IconRow = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 0px 60px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        flex-wrap: wrap;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        flex-wrap: wrap;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        flex-wrap: wrap;
+        height: 300px;
+    }
 `;
 
 const GitHub = props => (
@@ -49,6 +63,7 @@ const GitHub = props => (
 export const GitHubIcon = styled(GitHub)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;
@@ -64,6 +79,7 @@ const StackOverflow = props => (
 export const StackOverflowIcon = styled(StackOverflow)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;
@@ -79,6 +95,7 @@ const Twitter = props => (
 export const TwitterIcon = styled(Twitter)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;
@@ -94,6 +111,7 @@ const LinkedIn = props => (
 export const LinkedInIcon = styled(LinkedIn)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;
@@ -109,6 +127,7 @@ const Npm = props => (
 export const NpmIcon = styled(Npm)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;
@@ -124,6 +143,7 @@ const Medium = props => (
 export const MediumIcon = styled(Medium)`
     color: #fff;
     cursor: pointer;
+    margin: 10px 20px;
 
     &:hover {
         color: #FBB018;

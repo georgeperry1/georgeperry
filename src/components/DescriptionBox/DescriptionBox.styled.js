@@ -15,6 +15,14 @@ export const StyledDescriptionBox = styled.div`
     ${BREAK_POINTS.DESKTOP_SMALL} {
         width: 600px;
     }
+
+    ${BREAK_POINTS.TABLET} {
+        width: 500px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        width: 400px;
+    }
 `;
 
 export const DescriptionHeading = styled.p`
@@ -30,4 +38,17 @@ export const DescriptionText = styled.p`
     letter-spacing: 2px;
     position: relative;
     top: -40px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        text-align: justify;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        text-align: justify;
+        top: -60px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        text-align: justify;
+    }
 `;

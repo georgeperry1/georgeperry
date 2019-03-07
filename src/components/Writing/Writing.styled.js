@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 import { buzz } from '../NavBar/NavBar.styled';
+import { BREAK_POINTS } from '../../config';
 
 export const StyledWriting = styled.div`
     display: flex;
@@ -10,6 +11,7 @@ export const StyledWriting = styled.div`
     background: #fff;
     padding: 20px 10px 100px 10px;
     margin: 0;
+    width: 100%;
 `;
 
 export const WritingHeading = styled.p`
@@ -32,6 +34,16 @@ export const Article = styled.div`
     width: auto;
     align-self: center;
     margin: 25px 0px;
+
+    ${BREAK_POINTS.TABLET} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `;
 
 export const ThumbnailContainer = styled.div`
@@ -97,6 +109,18 @@ export const ArticleDetails = styled.div`
     padding-left: 30px; 
     position: relative;
     right: -270px;
+
+    ${BREAK_POINTS.TABLET} {
+        padding-left: 0px; 
+        flex-wrap: wrap;
+        width: 400px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding-left: 0px;
+        flex-wrap: wrap;
+        width: 300px;
+    }
 `;
 
 export const ArticleTitle = styled.p`

@@ -18,8 +18,25 @@ export const StyledLogoBox = styled.div`
         height: 80px;
         margin-bottom: 60px;
     }
+
+    ${BREAK_POINTS.TABLET} {
+        flex-direction: row;
+        width: 450px;
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        flex-direction: row;
+        width: 400px;
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 60px;
+    }
 `;
 
 export const TechLogo = styled.img`
     width: 60px;
+    margin: 10px 20px;
 `;
