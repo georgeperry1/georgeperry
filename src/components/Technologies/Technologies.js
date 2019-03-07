@@ -71,7 +71,7 @@ class Technologies extends Component {
     const items = [...firstItems, ...secondItems, ...thirdItems, ...fourthItems];
     let playing = false;
 
-    items.map(item => {
+    items.map(item => { //eslint-disable-line array-callback-return
       item.addEventListener('click', () => {
         if (!!playing)
           return;
