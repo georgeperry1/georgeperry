@@ -11,10 +11,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   width: 100%;
+  min-width: 362px;
 }
 
 #root {
-  
+  overflow: hidden;
 }
 
 * {

@@ -20,10 +20,6 @@ class App extends Component {
     };
   };
 
-  // componentDidMount() {
-  //   hotjar.initialize(hjid, hjsv);
-  // };
-
   handleTechnologyWaypointEnter = () => {
     this.setState({
       enterTechCount: this.state.enterTechCount + 1,

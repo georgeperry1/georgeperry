@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import anime from 'animejs';
 
 import { 
@@ -113,7 +112,7 @@ import {
     };
 
     componentWillReceiveProps(nextProps) {
-        if (!!nextProps.entered && nextProps.enterCount === 1 && window.screenX > 1200) {
+        if (!!nextProps.entered && nextProps.enterCount === 1 && window.screen.width > 1200) {
           const item = document.querySelector('.thumbnail-7');      
           item.onfullscreenchange();
         }

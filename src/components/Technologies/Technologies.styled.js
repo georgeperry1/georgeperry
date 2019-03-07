@@ -99,7 +99,7 @@ export const TechnologyItemContainer = styled.div`
     position: relative;
     transform-style: preserve-3d;
     background: transparent;
-    top: 300px;
+    top: ${props => (!!props.mobile ? '0' : '300px')};
     margin: 20px;
 `;
 

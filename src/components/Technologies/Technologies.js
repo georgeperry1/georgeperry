@@ -25,7 +25,20 @@ class Technologies extends Component {
     enterCount: PropTypes.num,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: false,
+    };
+  }
+
   componentDidMount() {
+    console.log('Screen:', window.screen.width);
+    
+    if (window.screen.width < 1200) {
+      this.setState({ mobile: true });
+    }
+
     const technologyTimeline = anime.timeline({
       easing: 'easeOutExpo',
       autoplay: false,
@@ -112,104 +125,106 @@ class Technologies extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!!nextProps.entered && nextProps.enterCount === 1) {
+    if (!!nextProps.entered && nextProps.enterCount === 1 && window.screen.width >= 1200) {
       const item = document.querySelector('.technology-container-1');      
       item.onfullscreenchange();
     }
   }
 
   render() {
+    const { mobile } = this.state;
+
     return (
       <StyledTechnologies>
         <section id='technologies'></section>
         <TechnologiesHeading>Technologies</TechnologiesHeading>
         <TechnologyContainer>
           <TechnologyBar>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/logo-javascript.svg"/>
               <TechnologyName>JavaScript</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/react.svg"/>
               <TechnologyName>React</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/redux.svg"/>         
               <TechnologyName>Redux</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/html-5.svg"/>
               <TechnologyName>HTML5</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/css3.svg"/>
               <TechnologyName>CSS3</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/nodejs-1.svg"/>
               <TechnologyName>Node JS</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-1">  
+            <TechnologyItemContainer className="technology-container-1" mobile={mobile} >
               <TechnologyItem className="technology-item-1" src="../../assets/express-109.svg"/>
               <TechnologyName>Express</TechnologyName>
             </TechnologyItemContainer>
           </TechnologyBar>
           <TechnologyBar>
-            <TechnologyItemContainer className="technology-container-2">  
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >  
               <TechnologyItem className="technology-item-2" src="../../assets/git-icon.svg"/>
               <TechnologyName>Git</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2"> 
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/github-icon-1.svg"/>
               <TechnologyName>GitHub</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2">  
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/mongodb.svg"/>
               <TechnologyName>MongoDB</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2">  
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/mysql.svg"/>
               <TechnologyName>MySQL</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2">
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/postgresql.svg"/>
               <TechnologyName>PostgreSQL</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2">
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/sass-1.svg"/>
               <TechnologyName>SASS</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-2">
+            <TechnologyItemContainer className="technology-container-2" mobile={mobile} >
               <TechnologyItem className="technology-item-2" src="../../assets/webpack-icon.svg"/>
               <TechnologyName>Webpack</TechnologyName>
             </TechnologyItemContainer>
           </TechnologyBar>
           <TechnologyBar>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/amazon-echo.svg"/>
               <TechnologyName>Amazon Echo</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/amazon-web-services-2.svg"/>
               <TechnologyName>AWS</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/circleci.svg"/>
               <TechnologyName>CircleCI</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/visual-studio-code.svg"/>
               <TechnologyName>VSCode</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/styled-components-new.png"/>
               <TechnologyName>Styled Components</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem className="technology-item-3" src="../../assets/storybook.png"/>
               <TechnologyName>Storybook</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-3">
+            <TechnologyItemContainer className="technology-container-3" mobile={mobile} >
               <TechnologyItem 
                 className="technology-item-3" 
                   src="../../assets/animejs.png" 
@@ -225,31 +240,31 @@ class Technologies extends Component {
             </TechnologyItemContainer>
           </TechnologyBar>
           <TechnologyBar>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/docker.svg"/>
               <TechnologyName>Docker</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/eslint-1.svg"/>
               <TechnologyName>ESLint</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/firebase-1.svg"/>
               <TechnologyName>Firebase</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/graphql.svg"/>
               <TechnologyName>GraphQL</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/heroku.svg"/>
               <TechnologyName>Heroku</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/trello.svg"/>
               <TechnologyName>Trello</TechnologyName>
             </TechnologyItemContainer>
-            <TechnologyItemContainer className="technology-container-4">
+            <TechnologyItemContainer className="technology-container-4" mobile={mobile} >
               <TechnologyItem className="technology-item-4" src="../../assets/gulp.svg"/>
               <TechnologyName>Gulp</TechnologyName>
             </TechnologyItemContainer>

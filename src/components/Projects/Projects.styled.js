@@ -33,20 +33,20 @@ export const YellowProjectBox = styled.div`
     padding: 20px;
 
     ${BREAK_POINTS.DESKTOP_SMALL} {
-        padding: 0px;
-        height: 850px;
+        padding: 0px 0px 100px 0px;
+        height: 1050px;
         flex-direction: column;
     }
 
     ${BREAK_POINTS.TABLET} {
-        padding: 0px;
-        height: 950px;
+        padding: 0px 0px 100px 0px;
+        height: 1150px;
         flex-direction: column;
     }
 
     ${BREAK_POINTS.MOBILE} {
-        padding: 0px;
-        height: 1050px;
+        padding: 0px 0px 100px 0px;
+        height: 1250px;
         flex-direction: column;
     }
 
@@ -116,6 +116,7 @@ export const ProjectContents = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 100%;
 
     ${BREAK_POINTS.DESKTOP_SMALL} {
         flex-direction: column-reverse;

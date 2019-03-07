@@ -4,14 +4,13 @@ import {
     StyledOrbitMacBook,
     Screenshot,
     ScreenBackground,
-    MacBook,
 } from './OrbitMacBook.styled';
 
 const OrbitMacBook = () => (
-    <StyledOrbitMacBook>
-        <Screenshot src="../../assets/snapshot.png" alt="Orbit" />
-        <MacBook src="../../assets/mockup.png" alt="Macbook" />
-        <ScreenBackground />
+    <StyledOrbitMacBook src="../../assets/mockup.png">
+        <ScreenBackground>    
+            <Screenshot src="../../assets/snapshot.png" alt="Orbit" />
+        </ScreenBackground>
     </StyledOrbitMacBook>
 );
   

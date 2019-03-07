@@ -32,7 +32,7 @@ class LandingSpecialities extends Component {
   }
 
   componentDidMount() {
-    if (window.screenX < 1200) {
+    if (window.screen.width < 1200) {
       this.setState({ delay: 0 });
     }
   }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 import anime from 'animejs';
 
 import { 
@@ -20,7 +19,7 @@ import {
 class Experience extends Component {
   
   componentDidMount() {
-    if (window.screenX >= 1200) {
+    if (window.screen.width >= 1200) {
       anime({
         targets: '.company-logo',
         rotateY: 360,
