@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
 
 import { 
     StyledProjects,
@@ -50,53 +49,35 @@ const trackstackLogos = [
 const trackstackProjectName = 'Trackstack';
 const trackstackProjectDescription = "Trackstack makes music discovery for DJs simpler and more productive. I was part of the team that built the mobile crate-digging app that helps DJs discover new and unheard tracks, organise their playlists, and share music with their colleagues, fans and friends.";
 
-  class Projects extends Component {
-    static defaultProps = {};
-  
-    static propTypes = {};
-  
-    componentDidMount() {
-    //   anime({
-    //     targets: '.company-logo',
-    //     rotateY: 360,
-    //     delay: 0,
-    //     easing: 'linear',
-    //     duration: 4000,
-    //     loop: true,
-    //   });
-    }
-  
-    render() {
-      return (
-        <StyledProjects>
-            <YellowProjectBox>
-              <ProjectContents>
-                <OrbitMacBook />
-                <LogoBox logos={orbitLogos} />
-                <DescriptionBox projectName={orbitProjectName} projectDescription={orbitProjectDescription} />
-              </ProjectContents>
-            </YellowProjectBox>
-            <WhiteProjectBox>
-              <ReverseProjectContents>
-                <DescriptionBox projectName={dialectProjectName} projectDescription={dialectProjectDescription} />
-                <LogoBox logos={dialectLogos} />
-                <MobileContainer>
-                  <DialectMobileOne src="../../assets/dialect1.jpg" />
-                  <DialectMobileTwo src="../../assets/dialect2.jpg" />
-                </MobileContainer>
-              </ReverseProjectContents>
-            </WhiteProjectBox>
-            <YellowProjectBox>
-              <ProjectContents>
-                <TracstackMobile src="../../assets/newtrackstack.png" />
-                <LogoBox logos={trackstackLogos} />
-                <DescriptionBox projectName={trackstackProjectName} projectDescription={trackstackProjectDescription} />
-              </ProjectContents>
-            </YellowProjectBox>
-        </StyledProjects>
-      );
-    }
-  }
+const Projects = () => {
+  return (
+  <StyledProjects>
+      <YellowProjectBox>
+        <ProjectContents>
+          <OrbitMacBook />
+          <LogoBox logos={orbitLogos} />
+          <DescriptionBox projectName={orbitProjectName} projectDescription={orbitProjectDescription} />
+        </ProjectContents>
+      </YellowProjectBox>
+      <WhiteProjectBox>
+        <ReverseProjectContents>
+          <DescriptionBox projectName={dialectProjectName} projectDescription={dialectProjectDescription} />
+          <LogoBox logos={dialectLogos} />
+          <MobileContainer>
+            <DialectMobileOne src="../../assets/dialect1.jpg" />
+            <DialectMobileTwo src="../../assets/dialect2.jpg" />
+          </MobileContainer>
+        </ReverseProjectContents>
+      </WhiteProjectBox>
+      <YellowProjectBox>
+        <ProjectContents>
+          <TracstackMobile src="../../assets/newtrackstack.png" />
+          <LogoBox logos={trackstackLogos} />
+          <DescriptionBox projectName={trackstackProjectName} projectDescription={trackstackProjectDescription} />
+        </ProjectContents>
+      </YellowProjectBox>
+  </StyledProjects>
+)};
   
   export default Projects;
   
