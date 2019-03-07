@@ -51,6 +51,22 @@ export const ThumbnailContainer = styled.div`
     height: 160px;
     position: relative;
     left: -270px;
+
+    ${BREAK_POINTS.DESKTOP_LARGE} {
+        left: 0;  
+    }
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        left: 0;  
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        left: 0;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        left: 0;
+    }
 `;
 
 export const StatBox = styled.div`
@@ -110,16 +126,26 @@ export const ArticleDetails = styled.div`
     position: relative;
     right: -270px;
 
+    ${BREAK_POINTS.DESKTOP_LARGE} {
+        right: 0;  
+    }
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        right: 0;  
+    }
+
     ${BREAK_POINTS.TABLET} {
         padding-left: 0px; 
         flex-wrap: wrap;
         width: 400px;
+        right: 0;
     }
 
     ${BREAK_POINTS.MOBILE} {
         padding-left: 0px;
         flex-wrap: wrap;
         width: 300px;
+        right: 0;  
     }
 `;
 
