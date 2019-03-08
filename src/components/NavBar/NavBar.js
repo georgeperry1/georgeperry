@@ -20,7 +20,7 @@ class NavBar extends Component {
   }
 
   handleOpen = e => {
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState({ isOpen: false });
   };
 
   render() {

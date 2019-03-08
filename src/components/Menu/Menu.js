@@ -20,14 +20,6 @@ class Menu extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent);
-  }
-
-  listenScrollEvent = () => {    
-   
-  }
-  
   handleMenuStyle = () => {    
     return {
       bmBurgerButton: {
@@ -82,15 +74,15 @@ class Menu extends Component {
   };
 
   render() {
-    const { isOpen } = this.props;
+    const { isOpen, onClick  } = this.props;
     return (
       <StyledMenu>
         <StyledMenuWrapper isOpen={isOpen} styles={this.handleMenuStyle()}>
-          <MenuItem href="#overview" offset='600'>Overview</MenuItem>
-          <MenuItem href="#technologies" offset='100'>Technologies</MenuItem>
-          <MenuItem href="#experience" offset='100'>Experience & Projects</MenuItem>
-          <MenuItem href="#writing" offset='50'>Writing</MenuItem>
-          <MenuItem href="#findme" offset='0'>Say Hello</MenuItem>
+          <MenuItem href="#overview" onClick={onClick} offset='600'>Overview</MenuItem>
+          <MenuItem href="#technologies" onClick={onClick} offset='100'>Technologies</MenuItem>
+          <MenuItem href="#experience" onClick={onClick} offset='100'>Experience & Projects</MenuItem>
+          <MenuItem href="#writing" onClick={onClick} offset='50'>Writing</MenuItem>
+          <MenuItem href="#findme" onClick={onClick} offset='0'>Say Hello</MenuItem>
         </StyledMenuWrapper>
       </StyledMenu>
     );
