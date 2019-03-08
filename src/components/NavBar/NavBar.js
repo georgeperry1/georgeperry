@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 
 import { 
   StyledNavBar,
@@ -8,10 +7,6 @@ import {
 import Menu from '../Menu';
 
 class NavBar extends Component {
-  static defaultProps = {};
-
-  static propTypes = {};
-
   constructor(props) {
     super(props);
     this.state = {
