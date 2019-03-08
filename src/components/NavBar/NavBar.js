@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { googleEvent } from '../../config';
 
 import { 
   StyledNavBar,
@@ -15,6 +16,7 @@ class NavBar extends Component {
   }
 
   handleOpen = e => {
+    googleEvent('Menu', 'Click', 'Menu Item')
     this.setState({ isOpen: false });
   };
 
@@ -26,7 +28,7 @@ class NavBar extends Component {
           isOpen={isOpen}
           onClick={this.handleOpen}
         />
-        <SendMessageButton href="#findme" offset='0'>Say Hello</SendMessageButton>
+        <SendMessageButton href="#findme" offset='0' onClick={e => googleEvent('Nav Bar', 'Click', 'Say Hello')}>Say Hello</SendMessageButton>
       </StyledNavBar>
     );
   }

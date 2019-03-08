@@ -10,6 +10,7 @@
     "react-anime": "^2.2.0",
     "react-burger-menu": "^2.6.4",
     "react-dom": "^16.8.0",
+    "react-ga": "^2.5.7",
     "react-gif-player": "^0.4.2",
     "react-hotjar": "^2.0.0",
     "react-icons-kit": "^1.2.1",

@@ -7163,6 +7163,10 @@ react-error-overlay@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
 
+react-ga@^2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.7.tgz#1c80a289004bf84f84c26d46f3a6a6513081bf2e"
+
 react-gif-player@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/react-gif-player/-/react-gif-player-0.4.2.tgz#7f7675625bb264a3cfac8956edd5a18b8c196af3"

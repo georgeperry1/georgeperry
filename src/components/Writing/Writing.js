@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
+import { googleEvent } from '../../config';
 
 import { 
     StyledWriting,
@@ -140,7 +141,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-7">
                     <ArticleTitle>Who will in the Voice War?</ArticleTitle>
-                    <ReadMe href="https://medium.com/@GeorgePerry/who-will-win-the-voice-war-a19510b4965b" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/@GeorgePerry/who-will-win-the-voice-war-a19510b4965b" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Voice War')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -159,7 +160,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-6">
                     <ArticleTitle>Bootcamp Series: Introduction</ArticleTitle>
-                    <ReadMe href="https://medium.com/code-words/bootcamp-series-introduction-b4b28d375260" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/code-words/bootcamp-series-introduction-b4b28d375260" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Into')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -178,7 +179,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-5">
                     <ArticleTitle>Bootcamp Series Part One: Why choose a Coding Bootcamp?</ArticleTitle>
-                    <ReadMe href="https://medium.com/code-words/bootcamp-series-why-choose-a-coding-bootcamp-c4315688a8d8" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/code-words/bootcamp-series-why-choose-a-coding-bootcamp-c4315688a8d8" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Part One')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -197,7 +198,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-4">
                     <ArticleTitle>Bootcamp Series Part Two: How To Choose The Right Coding Bootcamp</ArticleTitle>
-                    <ReadMe href="https://medium.com/code-words/bootcamp-series-how-to-choose-the-right-coding-bootcamp-ff207dcf9f86" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/code-words/bootcamp-series-how-to-choose-the-right-coding-bootcamp-ff207dcf9f86" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Part Two')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -216,7 +217,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-3">
                     <ArticleTitle>Bootcamp Series Part Three: How to Prepare for your Coding Bootcamp</ArticleTitle>
-                    <ReadMe href="https://medium.com/code-words/bootcamp-series-how-to-prepare-for-your-coding-bootcamp-f4293fbbf4a5" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/code-words/bootcamp-series-how-to-prepare-for-your-coding-bootcamp-f4293fbbf4a5" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Part Three')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -235,7 +236,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-2">
                     <ArticleTitle>Bootcamp Series Part Four: Managing Your Time, Mind and Health During Your Coding Bootcamp</ArticleTitle>
-                    <ReadMe href="https://medium.com/code-words/bootcamp-series-managing-your-time-mind-and-health-during-your-coding-bootcamp-8db29f6237e" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://medium.com/code-words/bootcamp-series-managing-your-time-mind-and-health-during-your-coding-bootcamp-8db29f6237e" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Part Four')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
            <Article>
@@ -254,7 +255,7 @@ import {
                 </ThumbnailContainer>
                 <ArticleDetails className="article-1">
                     <ArticleTitle>How we changed our recruitment process using a Chatbot</ArticleTitle>
-                    <ReadMe href="https://chatbotnewsdaily.com/how-we-changed-our-recruitment-process-using-a-chatbot-b030b9820c1d" target="_blank">Read Me</ReadMe>
+                    <ReadMe href="https://chatbotnewsdaily.com/how-we-changed-our-recruitment-process-using-a-chatbot-b030b9820c1d" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Chatbot')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
         </StyledWriting>
