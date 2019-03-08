@@ -30,6 +30,18 @@ export const DescriptionHeading = styled.p`
     color: #2C3243;
     font-weight: bold;
     letter-spacing: 4px;
+
+    ${BREAK_POINTS.DESKTOP_SMALL} {
+        padding: 0px 20px;
+    }
+
+    ${BREAK_POINTS.TABLET} {
+        padding: 0px 20px;
+    }
+
+    ${BREAK_POINTS.MOBILE} {
+        padding: 0px 10px;
+    }
 `;
 
 export const DescriptionText = styled.p`
@@ -41,14 +53,21 @@ export const DescriptionText = styled.p`
 
     ${BREAK_POINTS.DESKTOP_SMALL} {
         text-align: justify;
+        padding: 0px 20px;
     }
 
     ${BREAK_POINTS.TABLET} {
         text-align: justify;
         top: -60px;
+        padding: 0px 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
 
     ${BREAK_POINTS.MOBILE} {
         text-align: justify;
+        padding: 0px 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
 `;

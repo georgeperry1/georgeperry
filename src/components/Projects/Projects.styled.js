@@ -28,7 +28,7 @@ export const YellowProjectBox = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 450px;
+    height: 600px;
     position: relative;
     padding: 20px;
 
