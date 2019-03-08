@@ -140,7 +140,7 @@ import {
                     </ThumbnailStatBox>
                 </ThumbnailContainer>
                 <ArticleDetails className="article-7">
-                    <ArticleTitle>Who will in the Voice War?</ArticleTitle>
+                    <ArticleTitle>Who will win the Voice War?</ArticleTitle>
                     <ReadMe href="https://medium.com/@GeorgePerry/who-will-win-the-voice-war-a19510b4965b" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Voice War')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>

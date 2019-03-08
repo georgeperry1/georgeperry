@@ -12,6 +12,8 @@ export const initializeReactGA = () => {
 }
 
 export const googleEvent = (category, action, label) => {
+    console.log('Google:', category, action, label);
+    
     ReactGA.event({ category, action, label });
 };
  
