@@ -62,10 +62,10 @@ class App extends Component {
         <Waypoint
           onEnter={this.handleWritingWaypointEnter}
         />
-        <Writing 
+        {/* <Writing 
           entered={enteredWriting}
           enterCount={enterWritingCount}
-        />
+        /> */}
         <FindMe />
       </AppBody>
     );
