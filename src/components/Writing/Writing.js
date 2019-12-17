@@ -37,65 +37,65 @@ import {
             // delay: anime.stagger(0),
         });
 
-        thumbnailTimeline.add({
-            targets: '.thumbnail-6',
-            translateX: 270,
-            delay: anime.stagger(100),
-        }, 500);
+        // thumbnailTimeline.add({
+        //     targets: '.thumbnail-6',
+        //     translateX: 270,
+        //     delay: anime.stagger(100),
+        // }, 500);
 
-        thumbnailTimeline.add({
-            targets: '.article-6',
-            translateX: -270,
-            delay: anime.stagger(100),
-        }, 500);
+        // thumbnailTimeline.add({
+        //     targets: '.article-6',
+        //     translateX: -270,
+        //     delay: anime.stagger(100),
+        // }, 500);
     
-        thumbnailTimeline.add({
-            targets: '.thumbnail-5',
-            translateX: 270,
-            delay: anime.stagger(100),
-        }, 1000);
+        // thumbnailTimeline.add({
+        //     targets: '.thumbnail-5',
+        //     translateX: 270,
+        //     delay: anime.stagger(100),
+        // }, 1000);
 
-        thumbnailTimeline.add({
-            targets: '.article-5',
-            translateX: -270,
-            delay: anime.stagger(100),
-        }, 1000);
+        // thumbnailTimeline.add({
+        //     targets: '.article-5',
+        //     translateX: -270,
+        //     delay: anime.stagger(100),
+        // }, 1000);
     
-        thumbnailTimeline.add({
-            targets: '.thumbnail-4',
-            translateX: 270,
-            delay: anime.stagger(100),
-        }, 1500);
+        // thumbnailTimeline.add({
+        //     targets: '.thumbnail-4',
+        //     translateX: 270,
+        //     delay: anime.stagger(100),
+        // }, 1500);
 
-        thumbnailTimeline.add({
-            targets: '.article-4',
-            translateX: -270,
-            delay: anime.stagger(100),
-        }, 1500);
+        // thumbnailTimeline.add({
+        //     targets: '.article-4',
+        //     translateX: -270,
+        //     delay: anime.stagger(100),
+        // }, 1500);
 
-        thumbnailTimeline.add({
-            targets: '.thumbnail-3',
-            translateX: 270,
-            delay: anime.stagger(100),
-        }, 2000);
+        // thumbnailTimeline.add({
+        //     targets: '.thumbnail-3',
+        //     translateX: 270,
+        //     delay: anime.stagger(100),
+        // }, 2000);
 
-        thumbnailTimeline.add({
-            targets: '.article-3',
-            translateX: -270,
-            delay: anime.stagger(100),
-        }, 2000);
+        // thumbnailTimeline.add({
+        //     targets: '.article-3',
+        //     translateX: -270,
+        //     delay: anime.stagger(100),
+        // }, 2000);
     
-        thumbnailTimeline.add({
-            targets: '.thumbnail-2',
-            translateX: 270,
-            delay: anime.stagger(100),
-        }, 2500);
+        // thumbnailTimeline.add({
+        //     targets: '.thumbnail-2',
+        //     translateX: 270,
+        //     delay: anime.stagger(100),
+        // }, 2500);
 
-        thumbnailTimeline.add({
-            targets: '.article-2',
-            translateX: -270,
-            delay: anime.stagger(100),
-        }, 2500);
+        // thumbnailTimeline.add({
+        //     targets: '.article-2',
+        //     translateX: -270,
+        //     delay: anime.stagger(100),
+        // }, 2500);
     
         thumbnailTimeline.add({
             targets: '.thumbnail-1',
@@ -144,7 +144,7 @@ import {
                     <ReadMe href="https://medium.com/@GeorgePerry/who-will-win-the-voice-war-a19510b4965b" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Voice War')}>Read Me</ReadMe>
                 </ArticleDetails>
            </Article>
-           <Article>
+           {/* <Article>
                 <ThumbnailContainer className="thumbnail thumbnail-6">
                     <Thumbnail src="../../assets/intro.jpeg" />
                     <ThumbnailStatBox>
@@ -238,7 +238,7 @@ import {
                     <ArticleTitle>Bootcamp Series Part Four: Managing Your Time, Mind and Health During Your Coding Bootcamp</ArticleTitle>
                     <ReadMe href="https://medium.com/code-words/bootcamp-series-managing-your-time-mind-and-health-during-your-coding-bootcamp-8db29f6237e" target="_blank" onClick={e => googleEvent('Writing', 'Click', 'Bootcamp Part Four')}>Read Me</ReadMe>
                 </ArticleDetails>
-           </Article>
+           </Article> */}
            <Article>
                 <ThumbnailContainer className="thumbnail thumbnail-1">
                     <Thumbnail src="../../assets/cbnews.png" />
