@@ -24,21 +24,19 @@ export const List = styled.div`
 `;
 
 export const TechItem = styled.div`
-	height: 32px;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	font-size: 18px;
 	margin-bottom: 16px;
 `;
 
 export const ListItem = styled.a`
-	height: 32px;
 	font-size: 18px;
-	margin-bottom: 16px;
+	margin: 8px 0;
 	cursor: pointer;
 	text-decoration: none;
 	color: #000;
-	width: max-content;
 
 	&:hover {
 		color: #888;
@@ -51,7 +49,7 @@ export const Social = styled.a`
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-	margin-left: 32px;
+	margin-left: 8px;
 `;
 
 export const Copyright = styled.p`
